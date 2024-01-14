@@ -1,0 +1,10 @@
+- name: variables from Play level
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+
+#So here we will not touch this code/programme and will give values in variables.yaml file so programme will not effect

@@ -12,3 +12,5 @@
     ansible.builtin.debug:
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
 
+#Task level variable overridden playlevel variables is called inheritance
+#We can override variables in task level as well
