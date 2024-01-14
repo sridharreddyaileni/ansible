@@ -1,8 +1,8 @@
 - name: variables from PLAY level
   hosts: localhost
   tasks:
-  - name: check variables
-    ansible.builtin.debug:
-      msg: "Hi I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Durartion}}"
+- name: check variables
+  ansible.builtin.debug:
+    msg: "Hi I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Durartion}}"
 
 #Here we didn’t mention any thing inventory  but ansible can directly go to inventory and search
