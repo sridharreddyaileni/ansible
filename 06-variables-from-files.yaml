@@ -7,4 +7,5 @@
     ansible.builtin.debug:
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
 
-#So here we will not touch this code/programme and will give values in variables.yaml file so programme will not effect
+#So here we will not touch this code/programme and will give values in vars_files: variables.yaml file  
+#so programme will not effect
