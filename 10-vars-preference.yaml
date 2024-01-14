@@ -14,11 +14,13 @@
     WISHES: "Morning from PLAY"
   tasks:
   - name: check variables
-    vars:
-      PERSON: "Siva from TASK"
-      WISHES: "Morning from TASK"
+    #vars:
+    #  PERSON: "Siva from TASK"
+    #  WISHES: "Morning from TASK"
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"
 
 #We will mention the same variables in play level, task level, in var_files i.e.,variable file, in inventory.ini file and in vars_prompt ie.,prompt file
 #By default, always command line variables values are the highest priority in any programming language
+#Spaces should not be there in command line values , so remove space and run again
+#Second it will take from prompt but its taken from TASK
