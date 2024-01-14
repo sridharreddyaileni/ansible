@@ -10,3 +10,5 @@ tasks:
   -name: PLAY-2 and TASK-2
     ansible.builtin.debug:
       msg: "Hello from PLAY-2 and TASK-2"
+
+#This is just to show that we can write multiple plays in a single playbook
