@@ -9,9 +9,9 @@
   # - name: WISHES
   #   prompt: please enter your wishes
   #   private: false # user can't see what they are entering
-  vars:
-    PERSON: "Siva from PLAY"
-    WISHES: "Morning from PLAY"
+    vars:
+      PERSON: "Siva from PLAY"
+      WISHES: "Morning from PLAY"
   tasks:
   - name: check variables
       vars:
@@ -20,7 +20,13 @@
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"
 
-#We will mention the same variables in play level, task level, in var_files i.e.,variable file, in inventory.ini file and in vars_prompt ie.,prompt file
-#By default, always command line variables values are the highest priority in any programming language
-#Spaces should not be there in command line values , so remove space and run again
-#Second it will take from prompt but its taken from TASK so commented task then its taking prompt
+#varspreferences:
+#1. CMD
+#2. task
+#3. File
+#4. prompt
+#5. play
+#6. inventory
+#7. roles
+#Spaces should not be there in command line values
+
