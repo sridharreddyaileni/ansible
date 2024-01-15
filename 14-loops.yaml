@@ -9,4 +9,4 @@
     loop:
     - git
     - mysql
-    -postfix
+    - postfix
